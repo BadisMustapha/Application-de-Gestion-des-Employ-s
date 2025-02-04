@@ -62,6 +62,17 @@ public class GestionEmployes {
         System.out.println("Aucun employé trouvé avec cet ID.");
     }
 
+    // Afficher tous les employés
+    public static void afficherEmployes() {
+        if (nbEmployes == 0) {
+            System.out.println("Aucun employé enregistré !");
+        } else {
+            for (int i = 0; i < nbEmployes; i++) {
+                System.out.println(employes[i]);
+            }
+        }
+    }
+
 
     // Programme principal
     public static void main(String[] args) {
@@ -101,6 +112,7 @@ public class GestionEmployes {
                     supprimerEmploye(idSuppr);
                     break;
                 case 4:
+                    afficherEmployes();
                     break;
                 case 5:
                     break;
