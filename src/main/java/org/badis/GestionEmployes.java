@@ -73,6 +73,20 @@ public class GestionEmployes {
         }
     }
 
+    // Rechercher un employé
+    public static void rechercherEmploye(String critere) {
+        boolean found = false;
+        for (int i = 0; i < nbEmployes; i++) {
+            if (employes[i].getNom().contains(critere) || employes[i].getPoste().contains(critere)) {
+                System.out.println(employes[i]);
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("Aucun employé trouvé correspondant au critère.");
+        }
+    }
+
 
     // Programme principal
     public static void main(String[] args) {
@@ -115,6 +129,9 @@ public class GestionEmployes {
                     afficherEmployes();
                     break;
                 case 5:
+                    System.out.print("Rechercher par nom ou poste : ");
+                    String critere = scanner.nextLine();
+                    rechercherEmploye(critere);
                     break;
                 case 6:
                     break;
