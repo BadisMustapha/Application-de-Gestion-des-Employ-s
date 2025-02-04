@@ -33,6 +33,20 @@ public class GestionEmployes {
         }
     }
 
+    // Modifier un employé
+    public static void modifierEmploye(int id, String nouveauNom, String nouveauPoste, double nouveauSalaire) {
+        for (int i = 0; i < nbEmployes; i++) {
+            if (employes[i].getId() == id) {
+                employes[i].setNom(nouveauNom);
+                employes[i].setPoste(nouveauPoste);
+                employes[i].setSalaire(nouveauSalaire);
+                System.out.println("Employé modifié avec succès !");
+                return;
+            }
+        }
+        System.out.println("Aucun employé trouvé avec cet ID.");
+    }
+
 
     // Programme principal
     public static void main(String[] args) {
@@ -55,6 +69,16 @@ public class GestionEmployes {
                     ajouterEmploye(new Employe( nom, poste, salaire));
                     break;
                 case 2:
+                    System.out.print("ID à modifier : ");
+                    int idModif = scanner.nextInt();
+                    scanner.nextLine();
+                    System.out.print("Nouveau nom : ");
+                    String nouveauNom = scanner.nextLine();
+                    System.out.print("Nouveau poste : ");
+                    String nouveauPoste = scanner.nextLine();
+                    System.out.print("Nouveau salaire : ");
+                    double nouveauSalaire = scanner.nextDouble();
+                    modifierEmploye(idModif, nouveauNom, nouveauPoste, nouveauSalaire);
                     break;
                 case 3:
                     break;
