@@ -47,6 +47,21 @@ public class GestionEmployes {
         System.out.println("Aucun employé trouvé avec cet ID.");
     }
 
+    // Supprimer un employé
+    public static void supprimerEmploye(int id) {
+        for (int i = 0; i < nbEmployes; i++) {
+            if (employes[i].getId() == id) {
+                for (int j = i; j < nbEmployes - 1; j++) {
+                    employes[j] = employes[j + 1];
+                }
+                employes[--nbEmployes] = null;
+                System.out.println("Employé supprimé avec succès !");
+                return;
+            }
+        }
+        System.out.println("Aucun employé trouvé avec cet ID.");
+    }
+
 
     // Programme principal
     public static void main(String[] args) {
@@ -81,6 +96,9 @@ public class GestionEmployes {
                     modifierEmploye(idModif, nouveauNom, nouveauPoste, nouveauSalaire);
                     break;
                 case 3:
+                    System.out.print("ID à supprimer : ");
+                    int idSuppr = scanner.nextInt();
+                    supprimerEmploye(idSuppr);
                     break;
                 case 4:
                     break;
