@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011c5b8e-9785-42aa-8314-5a4f43cc78a8" name="Changes" comment="Afficher le menu principal avec les options disponibles.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/badis/GestionEmployes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/badis/GestionEmployes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/badis/classes/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/badis/classes/Employe.java" afterDir="false" />
+    <list default="true" id="011c5b8e-9785-42aa-8314-5a4f43cc78a8" name="Changes" comment="Afficher les employés triés par salaire (ordre croissant ou décroissant).">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,63 @@
       <option name="project" value="LOCAL" />
       <updated>1738695903241</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Créer un nouvel objet Employe et l’ajouter au tableau.">
+      <option name="closed" value="true" />
+      <created>1738696713442</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738696713442</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Mettre à jour les informations d’un employé existant à l’aide de son&#10;identifiant unique.">
+      <option name="closed" value="true" />
+      <created>1738696821913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738696821913</updated>
+    </task>
+    <task id="LOCAL-00007" summary=": Retirer un employé du tableau grâce à son identifiant unique.">
+      <option name="closed" value="true" />
+      <created>1738696882492</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738696882492</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Afficher tous les employés avec leurs détails.">
+      <option name="closed" value="true" />
+      <created>1738696932205</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738696932205</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Trouver un employé par son nom ou son poste.">
+      <option name="closed" value="true" />
+      <created>1738696994298</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738696994298</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Calculer la somme totale des salaires mensuels des employés.">
+      <option name="closed" value="true" />
+      <created>1738697035538</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738697035538</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Afficher les employés triés par salaire (ordre croissant ou décroissant).">
+      <option name="closed" value="true" />
+      <created>1738697074677</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738697074677</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +190,13 @@
     <MESSAGE value="initial Project" />
     <MESSAGE value="Création d'une classe Employe" />
     <MESSAGE value="Afficher le menu principal avec les options disponibles." />
-    <option name="LAST_COMMIT_MESSAGE" value="Afficher le menu principal avec les options disponibles." />
+    <MESSAGE value="Créer un nouvel objet Employe et l’ajouter au tableau." />
+    <MESSAGE value="Mettre à jour les informations d’un employé existant à l’aide de son&#10;identifiant unique." />
+    <MESSAGE value=": Retirer un employé du tableau grâce à son identifiant unique." />
+    <MESSAGE value="Afficher tous les employés avec leurs détails." />
+    <MESSAGE value="Trouver un employé par son nom ou son poste." />
+    <MESSAGE value="Calculer la somme totale des salaires mensuels des employés." />
+    <MESSAGE value="Afficher les employés triés par salaire (ordre croissant ou décroissant)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Afficher les employés triés par salaire (ordre croissant ou décroissant)." />
   </component>
 </project>
