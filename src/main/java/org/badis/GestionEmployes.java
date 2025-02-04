@@ -23,6 +23,16 @@ public class GestionEmployes {
         System.out.print("Choix : ");
     }
 
+    // Ajouter un employé
+    public static void ajouterEmploye(Employe employe) {
+        if (nbEmployes < 50) {
+            employes[nbEmployes++] = employe;
+            System.out.println("Employé ajouté avec succès !");
+        } else {
+            System.out.println("Le tableau est plein !");
+        }
+    }
+
 
     // Programme principal
     public static void main(String[] args) {
@@ -36,6 +46,13 @@ public class GestionEmployes {
 
             switch (choix) {
                 case 1:
+                    System.out.print("Nom : ");
+                    String nom = scanner.nextLine();
+                    System.out.print("Poste : ");
+                    String poste = scanner.nextLine();
+                    System.out.print("Salaire : ");
+                    double salaire = scanner.nextDouble();
+                    ajouterEmploye(new Employe( nom, poste, salaire));
                     break;
                 case 2:
                     break;

@@ -8,18 +8,19 @@ public class Employe {
     private String nom;
     private String poste;
     private double salaire;
+    private static int dernierId = 0; // Variable statique pour générer des IDs uniques
 
     // Constructeur par défaut
     public Employe() {
-        this.id = 0;
+        this.id = ++dernierId;
         this.nom = "";
         this.poste = "";
         this.salaire = 0.0;
     }
 
     // Constructeur avec tous les attributs
-    public Employe(int id, String nom, String poste, double salaire) {
-        this.id = id;
+    public Employe(String nom, String poste, double salaire) {
+        this.id = ++dernierId;
         this.nom = nom;
         this.poste = poste;
         this.salaire = salaire;
@@ -27,7 +28,6 @@ public class Employe {
 
     // Getters et Setters
     public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
     public String getNom() { return nom; }
     public void setNom(String nom) { this.nom = nom; }
     public String getPoste() { return poste; }

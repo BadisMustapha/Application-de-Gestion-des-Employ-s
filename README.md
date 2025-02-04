@@ -15,5 +15,9 @@
 <img src="images/printMenuR.png">
 
 ## Mèthode AjouterEmploye(Employe employe) :
+<img src="images/ajouterEmploye.png">
+<br>
+<img src="images/ajouterEmployeR.png">
 
+## Mèthode ModifierEmploye(int id, String nouveauNom, String nouveauPoste, double nouveauSalaire) :
 

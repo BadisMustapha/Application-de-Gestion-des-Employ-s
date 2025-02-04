@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011c5b8e-9785-42aa-8314-5a4f43cc78a8" name="Changes" comment="Création d'une classe Employe">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/badis/GestionEmployes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/badis/Main.java" beforeDir="false" />
+    <list default="true" id="011c5b8e-9785-42aa-8314-5a4f43cc78a8" name="Changes" comment="Afficher le menu principal avec les options disponibles.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/badis/GestionEmployes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/badis/GestionEmployes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/badis/classes/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/badis/classes/Employe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738694960326</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Afficher le menu principal avec les options disponibles.">
+      <option name="closed" value="true" />
+      <created>1738695903241</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738695903241</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +133,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial Project" />
     <MESSAGE value="Création d'une classe Employe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Création d'une classe Employe" />
+    <MESSAGE value="Afficher le menu principal avec les options disponibles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Afficher le menu principal avec les options disponibles." />
   </component>
 </project>
