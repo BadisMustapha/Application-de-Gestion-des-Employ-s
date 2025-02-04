@@ -87,6 +87,15 @@ public class GestionEmployes {
         }
     }
 
+    // Calculer la masse salariale
+    public static double calculerMasseSalariale() {
+        double total = 0;
+        for (int i = 0; i < nbEmployes; i++) {
+            total += employes[i].getSalaire();
+        }
+        return total;
+    }
+
 
     // Programme principal
     public static void main(String[] args) {
@@ -134,6 +143,7 @@ public class GestionEmployes {
                     rechercherEmploye(critere);
                     break;
                 case 6:
+                    System.out.println("Masse salariale : " + calculerMasseSalariale());
                     break;
                 case 7:
                     break;
