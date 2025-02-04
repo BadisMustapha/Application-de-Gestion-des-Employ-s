@@ -2,6 +2,7 @@ package org.badis;
 
 import org.badis.classes.Employe;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class GestionEmployes {
@@ -96,6 +97,13 @@ public class GestionEmployes {
         return total;
     }
 
+    // Trier les employés par salaire
+    public static void trierEmployesParSalaire(boolean ordreCroissant) {
+        Arrays.sort(employes, 0, nbEmployes, (e1, e2) -> ordreCroissant ? Employe.compareParSalaire(e1, e2) : -Employe.compareParSalaire(e1, e2));
+        System.out.println("Liste triée :");
+        afficherEmployes();
+    }
+
 
     // Programme principal
     public static void main(String[] args) {
@@ -146,6 +154,9 @@ public class GestionEmployes {
                     System.out.println("Masse salariale : " + calculerMasseSalariale());
                     break;
                 case 7:
+                    System.out.print("Trier par salaire (1 pour croissant, 2 pour décroissant) : ");
+                    int ordre = scanner.nextInt();
+                    trierEmployesParSalaire(ordre == 1);
                     break;
                 case 8:
                     System.out.println("Au revoir !");
